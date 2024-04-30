@@ -18,6 +18,8 @@ app.engine("hbs", exphbs.engine({
 }));
 
 app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
+app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"));
+
 
 app.get("/", (req,res)=>{
     res.render("main", {layout: "main", frutas: productos})

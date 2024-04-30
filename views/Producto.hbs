@@ -4,7 +4,7 @@
 <h1>{{producto}}</h1>
 <img class="" style="width:450px; height:450px" src="/assets/img/{{producto}}.png"/>
 
-<button class="mt-2"><h2>COMPRAR</h2></button>
+<button id="btn" class="mt-2"><h2>COMPRAR</h2></button>
 </div>
 <style>
 * {
@@ -15,3 +15,5 @@ background: #ece9e9;
 height: 100vh;
 }
 </style>
+<script>document.getElementById("btn").addEventListener("click", ()=>{
+    alert("Se descontaron $20000 de su cuenta, Gracias!")})</script>
